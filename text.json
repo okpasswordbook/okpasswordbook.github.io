@@ -1,9 +1,9 @@
 {
-    "title": "v1.7更新公告",
-    "content": "1.增加了更新公告（含内置下载功能，由于所有内容全部存储于Github，因为国内网络环境可能会有公告获取失败或无法下载的情况。）",
-    "pkg_name": "OK密码本v1.7.apk",
+    "title": "v1.8更新公告",
+    "content": "1.增加了n个bug\n2.增加了内置文件选择器。导入数据→从文件导入 使用内置文件选择器获取文件路径，突破“文档提供者”的限制。",
+    "pkg_name": "OK密码本v1.8.apk",
     "package": "com.kongqikill.okpasswordbook",
-    "version_name": "1.7",
+    "version_name": "1.8",
     "version_code": "202306041",
-    "pkg_url": "https://okpasswordbook.github.io/OK密码本_1.7.apk"
+    "pkg_url": "https://okpasswordbook.github.io/OK密码本_1.8.apk"
 }
