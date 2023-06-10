@@ -1,42 +1,153 @@
-<!DOCTYPE html lang="zh">
+<!DOCTYPE html>
+<html lang="zh">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 10vw;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 80vw;
+      max-width: 600px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 600px;
+      height: 200px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+
+    .card-text h1,
+    .card-text p {
+      margin: 5px 0;
+      padding: 0;
+    }
+
+    .card-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .card-icon img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 2px;
+    }
+
+    .changelog {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .changelog h2,
+    .changelog p {
+      margin: 5px 0;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+
+      .card-icon {
+        margin-top: 10px;
+      }
+    }
+
+    ul.vl {
+      list-style-type: square;
+    }
+  </style>
 </head>
 
-<style>
-  * {
-    margin: 0dvw;
-    padding: 0vw;
-  }
-
-  .a {
-    width: 80vw;
-    height: 40vw;
-    background-color: aliceblue;
-    box-shadow: 10cap;
-    align-content: center;
-    align-items: center;
-    display: flex;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .hi {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transform: translate(0%, 50%);
-  }
-</style>
-
 <body>
-  <div class="a">
-    <h1 class="hi">您好</h1>
-  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-text">
+        <h1>OK密码本</h1>
+        <p>1.9</p>
+        <p>2023年6月9日</p>
+      </div>
+      <div class="card-icon">
+        <img src="logo.png" alt="Logo">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a href="OK密码本_1.9.apk" class="button">下载</a>
+      <a href="https://github.com/okpasswordbook/OKPasswordBook-Repositorise/releases" class="button"
+        target="_blank">发布页</a>
+    </div>
+
+    <div class="changelog">
+      <h2>历史版本更新内容</h2>
+      <ul class="vl">
+        <p style="margin:20px;">v1.9<br>1.修复搜索状态下当搜索框内容为空时，修改或删除对应项目，软件会卡死或修改失败的问题<br>2.优化返回键，当处于搜索状态时，按下返回键会关闭搜索状态，非搜索状态时按下返回键会关闭窗口<br>3.补漏设置窗口导入数据使用自制文件选择器<br>4.恢复添加项目对话框选择应用按钮的提示<br>5.优化导入配置<br>6.文件选择器底部工具栏增加关闭按钮。<br>7.应用选择器首页右上角菜单→应用选择题，用来获取应用包名方便粘贴（因为部分原因，只能这样做了）</p>
+
+        <p style="margin:20px;">v1.8<br>1.增加了n个bug\n2.增加了内置文件选择器。导入数据→从文件导入 使用内置文件选择器获取文件路径，突破“文档提供者”的限制。</p>
+
+        <p style="margin:20px;">v1.7<br>增加了更新公告（含内置下载功能，由于所有内容全部存储于Github，因为国内网络环境可能会有公告获取失败或无法下载的情况。）</p>
+      </ul>
+    </div>
   </div>
 </body>
 
